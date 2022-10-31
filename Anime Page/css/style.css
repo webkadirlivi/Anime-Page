@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+body img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Rubik", sans-serif;
+}
+
+p,
+span {
+  font-family: "PT Sans", sans-serif;
+}
+
+/*navbar*/
+
+.navbar nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 25px;
+  background-color: rgb(20, 19, 19);
+  z-index: 1;
+}
+
+.navbar .navbar-left i {
+  letter-spacing: 0.3em;
+}
+
+.navbar .navbar-left span {
+  cursor: pointer;
+}
+
+.navbar .navbar-middle i:hover {
+  color: #f47112;
+}
+
+.navbar-middle {
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar .navbar-right {
+  cursor: pointer;
+  color: #fff;
+}
+
+.text-primary-1 {
+  background-color: rgb(233, 226, 216);
+  border: none;
+  border-radius: 12px;
+  padding: 5px 10px;
+  height: 28px;
+}
+
+.text-primary-1:hover {
+  background-color: #f47112;
+  transition: all 0.3s ease;
+}
+
+.navbar-right .right-1 {
+  padding: 0 20px;
+}
+
+.navbar-right .right-2 span {
+  padding: 0 10px;
+}
+
+.btn {
+  background-color: rgb(233, 226, 216);
+  border: none;
+  border-radius: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f47112;
+}
+
+.navbar nav .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-right .right-1 i {
+  padding: 30px;
+  transition: 0.4s ease;
+}
+
+.navbar-right .right-1 i:hover {
+  color: #000;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* SECTION MAIN SWIPER*/
+
+/* main swiper button*/
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  color: #333;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  color: #fff;
+  background-color: lime;
+}
+
+/* slidershow */
+
+.slidershow {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.bar:hover {
+  background-color: #fff;
+  width: 60px;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+/* aside */
+
+.aside h3 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.aside h1 {
+  color: #fff;
+}
+
+.times {
+  background-color: rgb(20, 19, 19);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.times .btn-1 {
+  padding: 1px 5px;
+  color: #f47112;
+  transition: all 0.5s ease;
+}
+
+.times .btn-1:hover {
+  background-color: rgb(185, 173, 157);
+  border-radius: 5px;
+  color: #141313;
+}
+
+.aside {
+  margin-top: 600px;
+  width: 30%;
+  float: right;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.aside-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.aside-animes .cards {
+  margin: 0 10px;
+}
+
+.aside-animes .cards .card {
+  margin: 10px 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(20, 19, 19);
+  border-radius: 10px;
+}
+
+.card-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  align-items: center;
+}
+
+.card-photo {
+  display: flex;
+  align-items: center;
+}
+
+.card-photo img {
+  width: 100px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-content h3 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.card-watch {
+  color: #fff;
+  opacity: 0.3;
+}
+
+.card-watch i {
+  margin: 0 5px;
+}
+
+.button-2 {
+  background-color: rgb(233, 226, 216);
+  padding: 3px 15px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.button-2:hover {
+  background-color: rgb(185, 173, 157);
+}
+
+/*ANIME MENU SECTIONS*/
+
+.anime-menu {
+  color: #fff;
+  padding-top: 600px;
+}
+
+.anime-menu .anime-menu-content {
+  display: flex;
+}
+
+.anime-menu h2 {
+  color: #da5b00;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.anime-menu h2:hover {
+  color: rgb(255, 145, 0);
+  letter-spacing: 1.8px;
+}
+
+.anime-menu h4{
+  color:#f47112;
+}
+
+.anime-menu p{
+  color: #9e9393;
+}
+
+.a-menu-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.a-menu-1 .menu-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141313;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.a-menu-1 .menu-card .menu-card-image {
+  padding: 10px 10px;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+.a-menu-1 .menu-card .menu-card-image img {
+  border-radius: 10px;
+}
+
+.a-menu-1 .menu-card .menu-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.a-menu-1 .menu-card .menu-card-content h4 {
+  padding: 7px 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+}
+
+.a-menu-1 .menu-card .menu-card-content p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.menu-btn a {
+  margin: 0 3px;
+  color: #9e9393;
+}
+
+.menu-btn {
+  background-color: rgb(20, 19, 19);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.menu-btn:hover {
+  background-color: rgb(233, 226, 216);
+  border-radius: 5px;
+}
+
+.menu-btn a:hover {
+  color: #333;
+}
+
+
+.date{
+  margin: 20px 10px;
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(rgba(0,0,0,0.8), 
+  rgba(0,0,0,0.8)),
+  url(/images/animes/demonslayer.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+
+
+
+
+
+
+
+
