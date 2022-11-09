@@ -294,7 +294,7 @@ input[name="r"] {
 }
 
 .card-photo img {
-  width: 100px;
+  max-width: 100px;
   margin-left: 5px;
   border-radius: 10px;
 }
@@ -379,7 +379,7 @@ input[name="r"] {
 
 .a-menu-1 .menu-card .menu-card-image {
   padding: 10px 10px;
-  width: 200px;
+  max-width: 200px;
   height: auto;
   cursor: pointer;
 }
